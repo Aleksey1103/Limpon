@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 26px;
+    /*line-height: 26px;*/
     color: #7581a1;
 }
 
@@ -174,3 +174,26 @@ h1 {
     font-weight: 800;
     color: #1085e4;
 }
+
+/*Стилизация блока видеофайла в разделе "page-app"*/
+
+.videofile {
+    display: inline-block;
+    position: relative;
+}
+
+.videofile a img {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    width: 18%;
+    top:39%;
+    left: 37%;
+}
+
+.videofile a img:hover {
+    width: 22%;
+    top:37%;
+    left: 35%;
+}
+/*Стилизация блока видеофайла в разделе "page-app"*/
