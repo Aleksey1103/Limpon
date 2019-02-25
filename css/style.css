@@ -1,13 +1,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    /*line-height: 26px;*/
+    line-height: 26px;
     color: #7581a1;
 }
 
-ul {
-    list-style: none;
-}
 
 a {
     text-decoration: none;
@@ -20,18 +17,88 @@ h1 {
 }
 
 .nav {
-    color: #6e7ea9;
     font-size: 12px;
     font-weight: 700;
+    color: #6e7ea9;
     text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.btn_free {
+.btn-primary {
+    font-size: 12px;
+    font-weight: 700;
     color: #fff;
     background-color: #1085e4;
-    font-size: 12px;
-    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding: 20px 40px;
+    border: 1px solid #1085e4;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    color: #1085e4;
+    background-color: #fff;
+}
+
+.btn-secondary {
+    font-size: 12px;
+    font-weight: 700;
+    color: #7e8bae;
+    background-color: #cbdbe8;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding: 20px 40px;
+    border: 1px solid #cbdbe8;
+    border-radius: 30px;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+}
+
+.btn-free {
+    font-weight: 400;
+    letter-spacing: 1.7px;
+    padding: 20px 56px;
+}
+
+.btn-group a + a {
+    margin-left: 16px;    
+}
+
+.btn-subscribe {
+    font-size: 14px;
+    letter-spacing: 2.7px;
+    padding: 16px 44px;
+    border-radius: 28px;
+}
+
+.btn-info {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8085b1;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding: 20px 62px;
+    border: 1px solid #dce1e5;
+    border-radius: 30px;
+}
+
+.btn-info:hover {
+    background-color: #edf4fb;
+}
+
+.btn-extension {
+    padding: 20px 62px;
+}
+
+.btn-message {
+    letter-spacing: 2.1px;
+    padding: 22px 54px;
 }
 
 .grid h2 {
@@ -96,11 +163,12 @@ h1 {
     color: #b1c3ee;
 }
 
-
 .software-item h2,
 .app-items h2, 
 .analitic-item h2,
-.simlicity-item h2 {
+.simlicity-item h2,
+.statistic-item h2,
+.page-screens h2 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
@@ -136,12 +204,6 @@ h1 {
     color: #bacbdc;
 }
 
-.statistic-item h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #192b59;
-}
-
 .statistic-item h2 span {
     display: block;
     text-transform: uppercase;
@@ -161,18 +223,118 @@ h1 {
     text-align: center;
 }
 
-.page-screens h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #192b59;
-}
-
-.page-screens h2 span {
+.page-screens h2 span,
+.page-plan h2 span {
     display: block;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 800;
     color: #1085e4;
+}
+
+.page-testimonials h2,
+.page-team h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.page-testimonials h2 span,
+.page-team h2 span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    color: #85c8ff;
+}
+
+.box-clients p,
+.box-price ul {
+    font-size: 14px;
+    color: #8085b1;
+}
+
+.box-clients .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+}
+
+.box-clients .position {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1085e4;
+}
+
+.page-plan h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #192b59;
+}
+
+.box-price-item h3 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #000958;
+}
+
+.box-price strong {
+    font-style: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0084ff;
+}
+
+.box-price-item-active h3 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box-price-item-active h3 span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box-price-item-highprice h3 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #192b59;
+}
+
+.box-price-item-active strong {
+    font-style: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box-price-item-highprice h3 span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #192b59;
+}
+
+.box-price-item-active .simbol,
+.box-price-item-highprice .simbol {
+    font-size: 20px;
+    font-weight: 700;
+    color: #7b8ab2;
+}
+
+.box-team .position {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    color: #1a88e1;
+}
+
+.box-team .name {
+    font-size: 26px;
+    font-weight: 600;
+    color: #192b59;
 }
 
 /*Стилизация блока видеофайла в разделе "page-app"*/
@@ -183,7 +345,6 @@ h1 {
 }
 
 .videofile a img {
-    display: inline-block;
     position: absolute;
     text-decoration: none;
     width: 18%;
