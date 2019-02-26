@@ -5,25 +5,50 @@ body {
     color: #7581a1;
 }
 
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+}
 
 a {
     text-decoration: none;
 }
 
 h1 {
+    max-width: 540px;
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
+    letter-spacing: -2.5px;
+    line-height: 90px;
+    margin-bottom: 64px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-logo {
+    padding-top: 5px;
 }
 
 .nav {
+    display: flex;
     font-size: 12px;
     font-weight: 700;
-    color: #6e7ea9;
     text-transform: uppercase;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.nav-item {
+    color: #6e7ea9;
+    letter-spacing: 2.5px;
+    padding: 19px;
+    
 }
 
 .btn-primary {
@@ -63,6 +88,11 @@ h1 {
     font-weight: 400;
     letter-spacing: 1.7px;
     padding: 20px 56px;
+    margin-left: 16px;
+}
+
+.btn-group {
+    margin-left: 4px;
 }
 
 .btn-group a + a {
@@ -167,8 +197,7 @@ h1 {
 .app-items h2, 
 .analitic-item h2,
 .simlicity-item h2,
-.statistic-item h2,
-.page-screens h2 {
+.page-statistic h2 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
@@ -186,30 +215,51 @@ h1 {
     color: #7581a1;
 }
 
-.statistic-item {
+.page-statistic {
     text-align: center;
 }
 
-.statistic-item ul li {
+.list-statistic {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 77px;
+}
+
+.list-statistic li {
     font-size: 12px;
     font-weight: 700;    
     color: #1085e4;
     text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
 }
 
-.statistic-item ul li span {
+.list-statistic li span {
     display: block;
     font-size: 60px;
     font-weight: 700;    
     color: #bacbdc;
+    letter-spacing: 0px;
+    margin-bottom: 23px;
 }
 
-.statistic-item h2 span {
+.page-statistic h2 {
+    width: 440px;
+    letter-spacing: -1.5px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+.page-statistic h2 span {
     display: block;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
     color: #1085e4;
+    letter-spacing: 3.2px;
+    line-height: 0px;
+    margin-bottom: 23px;
 }
 
 .special-paragraph {
@@ -219,27 +269,41 @@ h1 {
     color: #c4d2dd;
 }
 
-.page-screens {
-    text-align: center;
+.page-screen h2,
+.page-plan h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #192b59;
+    letter-spacing: -1.1px;    
+    padding: 0;
+    margin: 0 0 93px 0;
 }
 
-.page-screens h2 span,
+.page-screen h2 span,
 .page-plan h2 span {
     display: block;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 800;
     color: #1085e4;
+    margin-bottom: 28px;
+    letter-spacing: 3.7px;
 }
 
-.page-testimonials h2,
+.screen {
+    margin-top: 82px;
+    margin-bottom: -7px;
+}
+
+
+.page-clients h2,
 .page-team h2 {
     font-size: 40px;
     font-weight: 600;
     color: #fff;
 }
 
-.page-testimonials h2 span,
+.page-clients h2 span,
 .page-team h2 span {
     display: block;
     text-transform: uppercase;
@@ -267,29 +331,57 @@ h1 {
     color: #1085e4;
 }
 
-.page-plan h2 {
-    font-size: 40px;
-    font-weight: 600;
-    color: #192b59;
+.box-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-price p {
+    padding: 0;
+    margin: 0;
+}
+
+.box-price ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 28px 0 53px 0;
+    line-height: 40px;
+}
+
+.box-price strong {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0084ff;
+    letter-spacing: 2.7px;
+}
+
+.box-price-item,
+.box-price-item-highprice {
+    position: relative;
+    background-color: #f5faff;
+    padding: 89px 56px 96px 56px;
 }
 
 .box-price-item h3 {
     font-size: 70px;
     font-weight: 700;
     color: #000958;
+    letter-spacing: -2px;
+    margin: 0 auto 36px auto;
 }
 
-.box-price strong {
-    font-style: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #0084ff;
+.box-price-item-active {
+    background-color: #192b59;
+    padding: 89px 56px 96px 56px;
 }
 
 .box-price-item-active h3 {
     font-size: 70px;
     font-weight: 700;
     color: #fff;
+    letter-spacing: -2px;
+    margin: 0 auto 15px auto;
 }
 
 .box-price-item-active h3 span {
@@ -302,6 +394,8 @@ h1 {
     font-size: 70px;
     font-weight: 700;
     color: #192b59;
+    letter-spacing: -2px;
+    margin: 0 auto 15px auto;
 }
 
 .box-price-item-active strong {
@@ -324,6 +418,19 @@ h1 {
     color: #7b8ab2;
 }
 
+/* Стилизация затемненного угла у карточек "Free" и "$350/mo" раздела "page-plans" */
+
+.second-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    background: linear-gradient(to bottom left, #edf4fb 0%,#edf4fb 50%,transparent 50%, transparent 100%);
+}
+
+/* Стилизация затемненного угла у карточек "Free" и "$350/mo" раздела "page-plans" */
+
 .box-team .position {
     text-transform: uppercase;
     font-size: 14px;
@@ -336,6 +443,30 @@ h1 {
     font-weight: 600;
     color: #192b59;
 }
+
+/* PAGE */
+
+.page-statistic,
+.page-screen,
+.page-plan {
+    background-color: #edf6ff;
+}
+
+.page-statistic {
+    padding: 126px 0 96px 0;    
+}
+
+.page-screen {
+    text-align: center;
+    padding: 112px 0 0 0;
+}
+
+.page-plan {
+    text-align: center;
+    padding: 162px 0 121px 0;
+}
+
+/* PAGE */
 
 /*Стилизация блока видеофайла в разделе "page-app"*/
 
