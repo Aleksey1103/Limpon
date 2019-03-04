@@ -405,12 +405,7 @@ h1 {
     border-radius: 28px;
 }
 
-
-.page-software h2,
-.app-items h2, 
-.analitic-item h2,
-.simlicity-item h2,
-.page-statistic h2 {
+.title-50 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
@@ -425,7 +420,7 @@ h1 {
     flex-basis: 55%;
 }
 
-.page-software-icon {
+.settigs-icon {
     display: block;
     background-image: url(../img/settings_btn.png);
     background-repeat: no-repeat;
@@ -465,18 +460,21 @@ h1 {
     font-weight: 400;
     line-height: 24px;
     margin-left: 0;
-    margin-bottom: 52px;
-    padding-right: 40px;
+    margin-bottom: 24px;
+    display: block;
+    max-width: 91%;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 28px;
 }
 
 .page-software-screen {
     display: block;
     position: absolute;
-    top: 116px;
+    top: 47px;
     left: 0;
     background-image: url(../img/features_1/features_1_screen.png);
-    width: 931px;
-    height: 760px;
+    width: 936px;
+    height: 989px;
 }
 
 .page-statistic {
@@ -526,11 +524,140 @@ h1 {
     margin-bottom: 23px;
 }
 
+.page-app h2 {
+    letter-spacing: -1.5px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.page-app p {
+    margin-left: 4px;
+}
+
 .special-paragraph {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     color: #c4d2dd;
+    letter-spacing: 3.3px;
+    margin-top: 28px;
+    margin-bottom: 18px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -11px;
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a {
+    display: block;
+    background-image: url(../img/video/app.png);
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 78px;
+}
+
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+}
+
+.page-app-list>li>a.page-app-ios {
+    background-position: -189px 0;
+}
+
+.content-app {
+    width: 55%;
+}
+
+/*Стилизация блока видеофайла в разделе "page-app"*/
+
+.videofile {
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: -171px;
+    width: 561px;
+    height: 522px;
+    background-image: url(../img/video/video_preview.png);
+    background-size: 100% 100%;
+}
+
+.fa-play {
+    color: #1085e4;
+}
+
+.video-play-btn {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 219px;
+    left: 215px;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: 0 0 20px rgba(16,133,228,0.3);
+    transition: .1s;
+}
+
+.video-play-btn:hover {
+    width: 90px;
+    height: 90px;
+    top: 214px;
+    left: 210px;
+    line-height: 90px;
+    font-size: 21px;
+    box-shadow: 0 0 30px rgba(16,133,228,0.5);
+}
+/*Стилизация блока видеофайла в разделе "page-app"*/
+
+.flex-analitic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-analitic>div {
+    flex-basis: 53%;
+}
+
+.page-analitic-text {
+    margin-bottom: 53px;
+}
+
+.page-analitic .title-50 {
+    letter-spacing: -1.5px;
+    line-height: 58px;
+    margin-top: 12px;
+    margin-bottom: 29px;
+}
+
+.flex-simplicity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-simplicity>div {
+    flex-basis: 55%;
+}
+
+.page-simplicity-text {
+    margin-bottom: 52px;
+}
+
+.flex-simplicity .title-50 {
+    letter-spacing: -1.5px;
+    line-height: 58px;
+    margin-top: 12px;
+    margin-bottom: 29px;
 }
 
 .page-screen h2,
@@ -748,11 +875,31 @@ h1 {
 
 .page-software {
     position: relative;
-    background-image: url(../img/features_1/features_1_bg.png);
+    padding: 112px 0 147px 0;
+    overflow: hidden;
+
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
+.page-app {
+   padding: 112px 0 77px 0;
+}
+
+.page-analitic {
+    background-image: url(../img/features_2/features_2_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 112px 0 147px 0;
+    padding: 119px 0 137px 0;
+}
 
+.page-simplicity {
+    background-image: url(../img/featutures_2/featutures_2_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 121px 0 139px 0;
 }
 
 .page-statistic,
@@ -777,24 +924,4 @@ h1 {
 
 /* PAGE */
 
-/*Стилизация блока видеофайла в разделе "page-app"*/
 
-.videofile {
-    display: inline-block;
-    position: relative;
-}
-
-.videofile a img {
-    position: absolute;
-    text-decoration: none;
-    width: 18%;
-    top:39%;
-    left: 37%;
-}
-
-.videofile a img:hover {
-    width: 22%;
-    top:37%;
-    left: 35%;
-}
-/*Стилизация блока видеофайла в разделе "page-app"*/
