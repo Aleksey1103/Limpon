@@ -5,7 +5,6 @@ body {
     color: #7581a1;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -37,6 +36,7 @@ h1 {
     width: 181px;
     height: 49px;
     background-image: url(../img/header/header_logo.png);
+    background-position: center;
 }
 
 .nav {
@@ -59,6 +59,7 @@ h1 {
     display: block;
     background-image: url(../img/header/header_screen.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 897px;
     height: 745px;
     position: absolute;
@@ -133,24 +134,28 @@ h1 {
 
 .company-one {
     background-image: url(../img/sponsors/sponsors_logo_token.png);
+    background-position: center;
     flex-basis: 198px;
     height: 58px;
 }
 
 .company-two {
     background-image: url(../img/sponsors/sponsors_logo_magneto.png);
+    background-position: center;
     flex-basis: 200px;
     height: 69px;
 }
 
 .company-three {
     background-image: url(../img/sponsors/sponsors_logo_boohoo.png);
+    background-position: center;
     flex-basis: 201px;
     height: 47px;
 }
 
 .company-four {
     background-image: url(../img/sponsors/sponsors_logo_fractal.png);
+    background-position: center;
     flex-basis: 200px;
     height: 69px;
 }
@@ -473,8 +478,10 @@ h1 {
     top: 47px;
     left: 0;
     background-image: url(../img/features_1/features_1_screen.png);
+    background-position: center;
     width: 936px;
     height: 989px;
+    z-index: -1;
 }
 
 .page-statistic {
@@ -559,6 +566,7 @@ h1 {
     display: block;
     background-image: url(../img/video/app.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 185px;
     height: 78px;
 }
@@ -586,6 +594,7 @@ h1 {
     height: 522px;
     background-image: url(../img/video/video_preview.png);
     background-size: 100% 100%;
+    background-position: center;
 }
 
 .fa-play {
@@ -691,39 +700,73 @@ h1 {
     font-size: 40px;
     font-weight: 600;
     color: #fff;
+    letter-spacing: -1.2px;
 }
 
 .page-clients h2 span,
 .page-team h2 span {
+    display: block;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 800;
     color: #85c8ff;
+    letter-spacing: 3.5px;
+    margin-bottom: 28px;
 }
 
-.box-clients p,
-.box-price ul {
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+}
+
+.box-clients-item {
+    flex-basis: 31.5%;
+    background-color: #fff;
+    padding: 34px 42px 40px 41px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #f4f4f4;
+    box-sizing: border-box;
+}
+
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-info>div {
+    padding-left: 19px;
+}
+
+.box-clients-item p {
     font-size: 14px;
     color: #8085b1;
+    line-height: 24px;
+    margin: 0 0 27px 0;
 }
 
-.box-clients .name {
+.box-clients-item .name {
     font-size: 22px;
     font-weight: 600;
     color: #000958;
+    letter-spacing: -0.6px;
+    margin: 0 0 2px 0;
 }
 
-.box-clients .position {
+.box-clients-item .position {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     color: #1085e4;
+    letter-spacing: 2.8px;
+    margin: 0;
 }
 
 .box-price {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 93px;
 }
 
 .box-price p {
@@ -732,6 +775,8 @@ h1 {
 }
 
 .box-price ul {
+    font-size: 14px;
+    color: #8085b1;
     list-style-type: none;
     padding: 0;
     margin: 28px 0 37px 0;
@@ -797,7 +842,7 @@ h1 {
 }
 
 .box-price-item-active strong {
-    font-style: 14px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -850,6 +895,7 @@ h1 {
 .page-header {
     background-image: url(../img/header/header_bg.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 53px 0 330px 0;
     position: relative;
@@ -858,6 +904,7 @@ h1 {
 .page-companies {
     background-image: url(../img/sponsors/sponsors_bg.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -891,6 +938,7 @@ h1 {
 .page-analitic {
     background-image: url(../img/features_2/features_2_bg.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 119px 0 137px 0;
 }
@@ -898,13 +946,13 @@ h1 {
 .page-simplicity {
     background-image: url(../img/featutures_2/featutures_2_bg.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 121px 0 139px 0;
 }
 
 .page-statistic,
-.page-screen,
-.page-plan {
+.page-screen {
     background-color: #edf6ff;
 }
 
@@ -917,11 +965,28 @@ h1 {
     padding: 112px 0 0 0;
 }
 
+.page-clients {
+    position: relative;     
+    padding: 40px 0 0 0;
+    margin-top: 119px;
+}
+
+.page-clients::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/clients/clients_bg.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
 .page-plan {
     text-align: center;
-    padding: 162px 0 121px 0;
+    padding: 80px 0 121px 0;
 }
 
 /* PAGE */
-
-
