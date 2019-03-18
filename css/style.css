@@ -1630,8 +1630,7 @@ h1 {
 @media (max-width:1800px) {
     .screen-img {
         background-size: contain;
-        width: 50%;
-        height: 1;
+        width: 50%;        
         top: 15%;
     }
 }
