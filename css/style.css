@@ -2230,6 +2230,10 @@ h1 {
     .page-form {
         padding: 25px 0 35px 0;
     }
+
+    .contact-form .btn-primary {        
+        margin-right: auto;        
+    }
 }
 
 @media (max-width:600px) {
@@ -2313,8 +2317,7 @@ h1 {
     }
 
     .flex-footer { 
-        -ms-flex-preferred-size: 90%; 
-            flex-basis: 90%;      
+        width: 80%;
         -webkit-box-pack: center;      
             -ms-flex-pack: center;      
                 justify-content: center;       
@@ -2420,6 +2423,7 @@ h1 {
     .block-subscribe input {
         padding: 14px 20px 16px 20px;
         max-width: 320px;
+        margin: 0 auto;
     }
 
     .box-subscribe-child p {
@@ -2428,7 +2432,8 @@ h1 {
 
     .btn-subscribe {
         bottom: -50px;
-        left: 0;        
+        width: 120px;
+        left: calc(50% - 60px);        
     }
 
     .page-subscribe {
